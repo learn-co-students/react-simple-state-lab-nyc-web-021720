@@ -3,11 +3,15 @@ import React from "react"
 
 export default class Cell extends React.Component{
 
-    constructor(props){
-        super()
-        this.state={
-            color: props.value
-        }
+    // constructor(props){
+    //     super()
+    //     this.state={
+    //         color: props.value
+    //     }
+    // }
+
+    state={
+        color: this.props.value
     }
 
     handleClick= () =>{
